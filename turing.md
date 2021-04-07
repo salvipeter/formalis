@@ -134,7 +134,7 @@ forward :size
 
 ![image](./plants.png "Plants")
 
-1. Rekonstruáld ezeket a növényeket a fenti Prolog program segítségével! Segítség: a `[` és `]` rendre a rajzolási állapot (pozíció, irány) verembe mentését és onnan visszatöltését jelentik; Logoban ezeknek a `push "s pos push "s heading` ill. `penup setheading pop "s setpos pop "s pendown` parancssorozatok felelnek meg, ahol `s` egy kezdetben üres lista, amit a `make "s []` paranccsal készíthetünk el. Az `X` láthatatlan mozgás, amit a toll felemelésével és lerakásával érhetünk el: `penup forward 10 pendown`.
+1. Rekonstruáld ezeket a növényeket a fenti Prolog program segítségével! Segítség: a `[` és `]` rendre a rajzolási állapot (pozíció, irány) verembe mentését és onnan visszatöltését jelentik; Logoban ezeknek a `push "s pos push "s heading` ill. `penup setheading pop "s setpos pop "s pendown` parancssorozatok felelnek meg, ahol `s` egy kezdetben üres lista, amit a `make "s []` paranccsal készíthetünk el. Az `X`-nek a rajzolásban nincsen szerepe.
 2. Írd át a programot, hogy ne Logo, hanem PostScript programot generáljon!
 3. Írd újra a programot PostScriptben, más programnyelv használata nélkül!
 
