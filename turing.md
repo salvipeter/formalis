@@ -8,7 +8,7 @@ Ebben a dokumentumban megpróbáltam összeszedni néhány (szerintem) izgalmas 
 
 Bizonyos növények fejlődését modellezni lehet egy *nyelvtan* segítségével, ami egy kezdeti "rügyből" kiindulva azt lépésenként növeszti, amíg el nem éri végső állapotát. Az alkotóelemeket egy ábécé betűivel jelölhetjük, a lépéseink pedig mindig abból állnak, hogy egy vagy több szimbólumot adott szabályok szerint másokra cserélünk.
 
-Egy ilyen rendszert *generatív nyelvtannak* neveznek, és az általa képezhető szavak összessége pedig a nyelvtan által generált nyelv. Az ábécében levő szimbólumukat két csoportra osztjuk, *terminálisokra* és *nemterminálisokra*; ez utóbbiba tartozik a kezdő szimbólum is.
+Egy ilyen rendszert *generatív nyelvtannak* neveznek, és az általa képezhető szavak összessége pedig a nyelvtan által generált nyelv. Az ábécében levő szimbólumokat két csoportra osztjuk, *terminálisokra* és *nemterminálisokra*; ez utóbbiba tartozik a kezdő szimbólum is.
 
 Nézzünk egy példát! Legyen `n` a kezdő (nemterminális) szimbólum, `0` és `1` pedig a terminálisok. A szabályok legyenek a következők:
 ```
