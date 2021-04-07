@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Növények, nyelvek, gépek és hódok</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="növények-nyelvek-gépek-és-hódok">Növények, nyelvek, gépek és hódok</h1>
+<p>Salvi Péter, 2021</p>
+<p>Ebben a dokumentumban megpróbáltam összeszedni néhány (szerintem) izgalmas témát a formális nyelvek és automaták területéről, az ezzel általában együtt járó technikai jelölések mellőzésével.</p>
+<h2 id="generatív-nyelvtanok">Generatív nyelvtanok</h2>
+<p>Bizonyos növények fejlődését modellezni lehet egy <em>nyelvtan</em> segítségével, ami egy kezdeti “rügyből” kiindulva azt lépésenként növeszti, amíg el nem éri végső állapotát. Az alkotóelemeket egy ábécé betűivel jelölhetjük, a lépéseink pedig mindig abból állnak, hogy egy vagy több szimbólumot adott szabályok szerint másokra cserélünk.</p>
+<p>Egy ilyen rendszert <em>generatív nyelvtannak</em> neveznek, és az általa képezhető szavak összessége pedig a nyelvtan által generált nyelv. Az ábécében levő szimbólumukat két csoportra osztjuk, <em>terminálisokra</em> és <em>nemterminálisokra</em>; ez utóbbiba tartozik a kezdő szimbólum is.</p>
+<p>Nézzünk egy példát! Legyen <code>n</code> a kezdő (nemterminális) szimbólum, <code>0</code> és <code>1</code> pedig a terminálisok. A szabályok legyenek a következők:</p>
+<pre><code>1. n -&gt; 0n0
+2. n -&gt; 1n1
+3. n -&gt; 0
+4. n -&gt; 1
+5. n -&gt; ∅</code></pre>
+<p>Ezek alapján például le tudjuk generálni az <code>11011011</code> szót:</p>
+<pre><code>n --2-&gt; 1n1 --2-&gt; 11n11 --1-&gt; 110n011 --2-&gt; 1101n1011 --5-&gt; 11011011</code></pre>
+<p>Az utolsó lépésben az <code>n</code> eltűnik, és innentől már nincs több alkalmazható szabály. Könnyen látható, hogy ezekkel a szabályokkal az összes <code>0</code> és <code>1</code> számokból álló palindróma (oda-vissza ugyanolyan szó) írható le.</p>
+<p>A szabályokra különféle megkötéseket lehet tenni, amelyek segítségével a generált nyelveknek egy hierarchiáját építhetjük fel.</p>
+<h3 id="reguláris-3-típusú-nyelvek">Reguláris (3. típusú) nyelvek</h3>
+<p>A szabályok két fajtája megengedett:</p>
+<pre><code>1. x -&gt; yX
+2. x -&gt; X</code></pre>
+<p>Itt <code>x</code> és <code>y</code> nemterminális szimbólumok, <code>X</code> pedig terminálisok (akár üres) sorozata. Például ha a fenti példában szereplő szimbólumokhoz még hozzátesszük a nemterminális <code>a</code>-t, az</p>
+<pre><code>1. n -&gt; a01
+2. a -&gt; a001
+3. a -&gt; 01</code></pre>
+<p>szabályok segítségével legenerálhatóak a <code>0101</code>, <code>0100101</code>, <code>0100100101</code>, .., <code>01(001)*01</code> szavak, ahol a csillag a zárójeles kifejezés tetszőleges számú ismétlését jelzi, pl.:</p>
+<pre><code>n --1-&gt; a01 --2-&gt; a00101 --2-&gt; a00100101 --3-&gt; 0100100101</code></pre>
+<h3 id="környezetfüggetlen-2-típusú-nyelvek">Környezetfüggetlen (2. típusú) nyelvek</h3>
+<p>Legyen minden szabály <code>x -&gt; X</code> alakú, ahol <code>x</code> nemterminális szimbólum, <code>X</code> pedig tetszőleges szó, tehát vegyesen lehetnek benne terminálisok és nemterminálisok (<code>X</code> lehet üres is). Ez nyilván a szabályoknak egy tágabb halmaza; a fenti palindrómás példa is ide tartozik.</p>
+<h3 id="környezetfüggő-1-típusú-nyelvek">Környezetfüggő (1. típusú) nyelvek</h3>
+<p>Legyen minden szabály <code>XyZ -&gt; XYZ</code> alakú, ahol <code>y</code> nemterminális szimbólum, <code>X</code>, <code>Y</code> és <code>Z</code> pedig tetszőleges szó. <code>X</code> és <code>Z</code> lehet üres is, viszont <code>Y</code> csak akkor, ha <code>X</code> és <code>Z</code> is az (tehát ha a szabály <code>y -&gt; ∅</code> alakú), és <code>y</code> nem szerepel egy szabály jobboldalán sem.</p>
+<h3 id="rekurzívan-felsorolható-0-típusú-nyelvek">Rekurzívan felsorolható (0. típusú) nyelvek</h3>
+<p>Ez a nyelvek legtágabb osztálya: a szabályokra nincsenek megkötések, tetszőleges két szó közti átmenet megengedett.</p>
+<h3 id="lindenmayer-rendszerek">Lindenmayer-rendszerek</h3>
+<p>Visszatérve a növények modellezésére, a Lindenmayer- vagy L-rendszerek olyan környezetfüggetlen nyelvtanok, amelyeknek a szabályai közt nincs két azonos baloldalú. A generálás folyamata kissé eltér a fent leírttól: minden egyes iterációban az összes szabályt egyszerre, minden lehetséges helyen alkalmazzuk. Például az eredeti, algák növekedésére készített rendszer</p>
+<pre><code>a -&gt; ab
+b -&gt; a</code></pre>
+<p>volt, ahol <code>a</code> a kezdő szimbólum. Az iterációk során tehát így változik:</p>
+<pre><code>0. a
+1. ab
+2. aba
+3. abaab
+4. abaababa
+5. abaababaabaab
+6. abaababaabaababaababa
+...</code></pre>
+<p>Ezt a logikát egyszerű grafikai értelmezéssel kombinálva nagyon szép fraktálokat, páfrányokat és fákat lehet generálni. A Sierpiński-háromszög készítéséhez pl. a következő szabályok alkalmazhatóak:</p>
+<pre><code>a -&gt; f-g-g
+f -&gt; f-g+f+g-f
+g -&gt; gg</code></pre>
+<p>Jelentse itt az <code>f</code> és <code>g</code> egyaránt azt, hogy az aktuális irányban egységnyi vonalat húzunk, a <code>-</code> és <code>+</code> pedig hogy jobbra ill. balra fordulunk 120 fokot.</p>
+<p>Az alábbi Prolog program kiszámolja az <em>n</em>-edik iteráció eredményét, és kiírja a megfelelő Logo programot:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>lindenmayer(<span class="dv">0</span><span class="kw">,</span> <span class="dt">X</span>) <span class="kw">:-</span> prologue<span class="kw">,</span> maplist(paint<span class="kw">,</span> <span class="dt">X</span>)<span class="kw">.</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>lindenmayer(<span class="dt">N</span><span class="kw">,</span> <span class="dt">X</span>) <span class="kw">:-</span> <span class="dt">N</span> <span class="dt">&gt;</span> <span class="dv">0</span><span class="kw">,</span> <span class="dt">N1</span> <span class="dt">is</span> <span class="dt">N</span> <span class="dt">-</span> <span class="dv">1</span><span class="kw">,</span> iterate(<span class="dt">X</span><span class="kw">,</span> <span class="dt">X1</span>)<span class="kw">,</span> lindenmayer(<span class="dt">N1</span><span class="kw">,</span> <span class="dt">X1</span>)<span class="kw">.</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>iterate([]<span class="kw">,</span> [])<span class="kw">.</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>iterate([<span class="dt">X</span><span class="fu">|</span><span class="dt">Xs</span>]<span class="kw">,</span> <span class="dt">Z</span>) <span class="kw">:-</span> rule(<span class="dt">X</span><span class="kw">,</span> <span class="dt">Y</span>)<span class="kw">,</span> iterate(<span class="dt">Xs</span><span class="kw">,</span> <span class="dt">Ys</span>)<span class="kw">,</span> append(<span class="dt">Y</span><span class="kw">,</span> <span class="dt">Ys</span><span class="kw">,</span> <span class="dt">Z</span>)<span class="kw">.</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>iterate([<span class="dt">X</span><span class="fu">|</span><span class="dt">Xs</span>]<span class="kw">,</span> <span class="dt">Z</span>) <span class="kw">:-</span> <span class="kw">\+</span> rule(<span class="dt">X</span><span class="kw">,</span> <span class="dt">_</span>)<span class="kw">,</span> iterate(<span class="dt">Xs</span><span class="kw">,</span> <span class="dt">Ys</span>)<span class="kw">,</span> append([<span class="dt">X</span>]<span class="kw">,</span> <span class="dt">Ys</span><span class="kw">,</span> <span class="dt">Z</span>)<span class="kw">.</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>prologue <span class="kw">:-</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write</span>(<span class="st">&#39;</span><span class="st">clearscreen</span><span class="st">&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">,</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write</span>(<span class="st">&#39;</span><span class="st">make </span><span class="st">&quot;</span><span class="st">size </span><span class="st">10&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">,</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write</span>(<span class="st">&#39;</span><span class="st">make </span><span class="st">&quot;</span><span class="st">angle </span><span class="st">120&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">.</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>paint(f) <span class="kw">:-</span> <span class="fu">write</span>(<span class="st">&#39;</span><span class="st">forward </span><span class="st">:</span><span class="st">size</span><span class="st">&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">.</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>paint(g) <span class="kw">:-</span> <span class="fu">write</span>(<span class="st">&#39;</span><span class="st">forward </span><span class="st">:</span><span class="st">size</span><span class="st">&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">.</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>paint(<span class="fu">-</span>) <span class="kw">:-</span> <span class="fu">write</span>(<span class="st">&#39;</span><span class="st">right </span><span class="st">:</span><span class="st">angle</span><span class="st">&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">.</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>paint(<span class="fu">+</span>) <span class="kw">:-</span> <span class="fu">write</span>(<span class="st">&#39;</span><span class="st">left </span><span class="st">:</span><span class="st">angle</span><span class="st">&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">.</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>rule(a<span class="kw">,</span> [f,<span class="fu">-</span>,g,<span class="fu">-</span>,g])<span class="kw">.</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>rule(f<span class="kw">,</span> [f,<span class="fu">-</span>,g,<span class="fu">+</span>,f,<span class="fu">+</span>,g,<span class="fu">-</span>,f])<span class="kw">.</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>rule(g<span class="kw">,</span> [g,g])<span class="kw">.</span></span></code></pre></div>
+<p>Példa a program kimenetére:</p>
+<pre><code>?- lindenmayer(2, [a]).
+clearscreen
+make &quot;size 10
+make &quot;angle 120
+forward :size
+right :angle
+forward :size
+left :angle
+forward :size
+left :angle
+forward :size
+right :angle
+forward :size
+right :angle
+forward :size
+forward :size
+right :angle
+forward :size
+forward :size</code></pre>
+<p>7-8 iteráció után már elég szép ábrát kapunk.</p>
+<h3 id="feladatok">Feladatok</h3>
+<p><img src="./plants.png" title="Plants" alt="image" /></p>
+<ol>
+<li>Rekonstruáld ezeket a növényeket a fenti Prolog program segítségével! Segítség: a <code>[</code> és <code>]</code> rendre a rajzolási állapot (pozíció, irány) verembe mentését és onnan visszatöltését jelentik; Logoban ezeknek a <code>push "s pos push "s heading</code> ill. <code>penup setheading pop "s setpos pop "s pendown</code> parancssorozatok felelnek meg, ahol <code>s</code> egy kezdetben üres lista, amit a <code>make "s []</code> paranccsal készíthetünk el. Az <code>X</code> láthatatlan mozgás, amit a toll felemelésével és lerakásával érhetünk el: <code>penup forward 10 pendown</code>.</li>
+<li>Írd át a programot, hogy ne Logo, hanem PostScript programot generáljon!</li>
+<li>Írd újra a programot PostScriptben, más programnyelv használata nélkül!</li>
+</ol>
+<h2 id="automaták">Automaták</h2>
+<p>Egy nagyon izgalmas eredmény, hogy a fent bemutatott ún. Chomsky-hierarchia egyes nyelvosztályaihoz tartozik egy-egy <em>állapotgép</em>, ami a nyelv által generált szavakat ismeri fel.</p>
+<h3 id="véges-automata">Véges automata</h3>
+<p>A legegyszerűbb ilyen gép a <em>véges automata</em>. Ezt úgy lehet elképzelni, mint egy dobozt, amibe be tudunk dugni egy szalagot, amin szimbólumok sorozata van, és a gép ezt balról jobbra tudja olvasni. A gépen van ezenkívül egy lámpa, ami kijelzi, hogy a gép elfogadta-e (felismerte-e) a szalagon levő szót.</p>
+<p>A gép véges sok állapotban lehet, ezek közül egy kitüntetett állapot a kezdőállapot, és lehet egy vagy több végállapota. Ha a szó végigolvasásakor végállapotba kerül, a szót elfogadja, egyébként nem. A gép működését <em>állapotátmenetek</em> határozzák meg, amelyek mindig az aktuális állapottól, és az olvasó fej által éppen érzékelt szimbólumtól függnek. A gép determinisztikus, tehát egy adott állapotban egy bizonyos szimbólumra csak egy állapotátmenetet engedünk meg.</p>
+<p>Ez a gép reguláris kifejezéseket képes felismerni, tehát olyan szavakat, amelyeknek részeit iterálhatjuk (<code>*</code>) vagy választhatunk közülük (<code>+</code>), pl. van olyan véges automata, ami a <code>0(01+110)*1</code> nyelvet ismeri fel, így pl. a <code>01</code>, <code>0011</code>, <code>01101</code>, <code>001011</code>, <code>0011101</code> stb. szavakat. Az automata így néz ki:</p>
+<pre><code>          +---&lt;---+----&lt;----+
+          |       |         |
+          |       1         |
+          v       |         0
+[A] --0-&gt; B --0-&gt; C         |
+          |                 |
+          +---1-&gt; (D) --1-&gt; E</code></pre>
+<p>Itt az <code>[A]</code> a kezdő-, és a <code>(D)</code> a végállapot.</p>
+<p>Könnyen belátható, hogy a véges automaták és a reguláris generatív nyelvtanok kölcsönösen megfeleltethetőek egymásnak.</p>
+<p>Egy érdekes tétel a “pumpa-lemma”. Ez azt mondja ki, hogy egy <em>n</em> állapotból álló véges automatánál minden legalább <em>n</em> hosszú <code>W</code> szó felosztható <code>W = XYZ</code> alakban úgy, hogy <code>XY</code> hossza legfejlebb <code>n</code>, <code>Y</code> nem üres, és az <code>Y</code> többszöri alkalmazásával kapott <code>XYYZ</code>, <code>XYYYZ</code> stb. szavak szintén benne vannak a nyelvben. Az alapgondolat az, hogy ha egy szó legalább <em>n</em> hosszú, akkor az elfogadásakor át kell, hogy menjen egy hurkon, és a hurok tetszőlegesen ismételhető.</p>
+<p>A fenti példában 5 állapot van (<code>A</code>-<code>E</code>), tehát ha veszünk egy legalább 5 hosszú szót a generált nyelvből, pl. a <code>01101</code>-et, ez garantáltan átmegy egy hurkon - és tényleg, a <code>B-D-E</code> hurkon. Ha tehát <code>X = 0</code>, <code>Y = 110</code>, <code>Z = 1</code>-et választunk, az <code>XYY..Z</code> tényleg benne lesz a nyelvben.</p>
+<p>Ebből következik, hogy pl. a palindrómák felismerésére a véges automaták nem alkalmasak. Vegyük azt az <code>a..aba..a</code> alakú palindrómát, aminek az elején és végén is <em>n</em> darab <code>a</code> áll. Ez tehát hosszabb, mint <em>n</em>, következésképp kéne, hogy létezzen a fent leírt felbontás. Viszont <code>XY</code> hossza legfeljebb <em>n</em> lehet, tehát csak <code>a</code>-kból állhat, így <code>Y</code> ismétlése után csak a kezdő <code>a</code>-k száma fog nőni, és nem lesz többé palindróma, ellentmondásra jutottunk.</p>
+<h3 id="veremautomata">Veremautomata</h3>
+<p>Az előbbi gépünkhöz adjunk hozzá egy újabb szalagot, ami kezdetben üres, és az egyik irányban végtelen. Ezen a szalagon a gép két műveletet tud végezni:</p>
+<ol>
+<li><code>push</code>: jobbra mozgatja, és ráír egy szimbólumot</li>
+<li><code>pop</code>: törli az aktuális szimbólumot, és balra mozgatja</li>
+</ol>
+<p>Az állapotátmenetek a két szalagon látott szimbólumok alapján történnek, és lehetnek nemdeterminisztikusak is, tehát azonos állapot+szimbólumpárhoz több átmenet is tartozhat, de egy adott szó felismerésekor a gépről feltételezzük, hogy mindig a “megfelelő” lehetőséget választja.</p>
+<p>A gép a nevét arról kapta, hogy a plusz szalag felfogható úgy, mint egy verem, ahova felülről be tudunk dobni újabb és újabb szimbólumokat (<code>push</code>), amelyekből mindig csak a legfelső látszik, majd ha már nem kell, a legfelsőt kidobjuk (<code>pop</code>), és ezáltal az alatta levő láthatóvá válik.</p>
+<p>Bizonyítható, hogy az egy ilyen gép által felismerhető nyelvek éppen a környezetfüggetlenek lesznek.</p>
+<h4 id="feladatok-1">Feladatok</h4>
+<ol>
+<li><p>Egy nyelv tartalmazza az <code>a..b..</code> szavakat, ahol az <code>a</code>-k és <code>b</code>-k száma azonos. Mutasd meg, hogy ezt véges automatával nem lehet leírni, és írj veremautomatát, ami csak ennek a nyelvnek a szavait fogadja el!</p></li>
+<li><p>Egy nyelv tartalmazza a <code>0..1..0..1..</code> alakú szavakat, ahol vagy a két <code>0</code>-s csoport, vagy a két <code>1</code>-es csoport hossza azonos, tehát ide tartozik a <code>000110001</code> és a <code>0110011</code> is. Írd le ezt a nyelvet nemdeterminisztikus veremautomatával!</p></li>
+</ol>
+<h3 id="lineárisan-korlátolt-automata">Lineárisan korlátolt automata</h3>
+<p>Itt most megint csak egy szalagunk van, de az hosszú, jobbra-balra mozgatható, és írni is lehet rá. (A szalagon elhelyezett vizsgált szót speciális szimbólumokkal határoljuk el.) Annyi megkötés van még, hogy a szalag hossza a bemeneti szó hosszának legfeljebb csak valamilyen fix <em>k</em>-szorosa lehet.</p>
+<p>Egy állapotátmenet itt már nem csak azt mondja meg, hogy adott állapotban ha egy bizonyos szimbólumot látunk, akkor milyen állapotba váltsunk, hanem azt is, hogy a látott szimbólum helyére mit írjunk, és a szalagot melyik irányba mozgassuk, pl.:</p>
+<pre><code>start/1 =&gt; next/0, right.</code></pre>
+<p>Tehát a <code>start</code> állapotban ha <code>1</code>-est látunk, akkor a <code>next</code> állapotba váltunk, <code>0</code>-t írunk, és a szalagot jobbra mozgatjuk.</p>
+<p>Ha megengedünk nemdeterminisztikus átmeneteket, ez a gép pontosan a környezetfüggő nyelvtanoknak felel meg. Az viszont még nem ismert, hogy minden környezetfüggő nyelvtan leírható-e a determinisztikus variánssal.</p>
+<h4 id="feladat">Feladat</h4>
+<p>Egy nyelv tartalmazza az <code>a..b..c..</code> szavakat, ahol az <code>a</code>-k, <code>b</code>-k és <code>c</code>-k száma azonos. Mutasd meg, hogy ezt veremautomatával nem lehet leírni, és írj lineárisan korlátolt automatát, ami pontosan ennek a nyelvnek a szavait fogadja el!</p>
+<h3 id="turing-gép">Turing-gép</h3>
+<p><img src="./turing-machine.jpg" title="Turing machine" alt="image" /></p>
+<p>Végül a Turing-gépnél feloldjuk a lineáris korlátot is, és azt mondjuk, hogy a szalag legyen végtelen hosszú. Létezik nemdeterminisztikus és/vagy többszalagos változata, de ezek is ugyanazokat a nyelveket képesek felismerni - a rekurzívan felsorolhatóakat. (Sőt, a szalag elég, ha az egyik irányban végtelen.)</p>
+<p>A Turing-gépek használhatóak függvények kiszámítására is: a szalagon kezdetben adottak a függvény paraméterei, és a gép leállásakor a szalagon található az eredmény (konvenció szerint az olvasófejtől balra).</p>
+<p>A számításelmélet talán legfontosabb tétele a Church-Turing tézis, miszerint a Turing-gépek, a rekurzív függvények, a lambda-kalkulus, és a számítógépes (nem interaktív) programok mind azonos “erősségűek”, ugyanazokra a számításokra képesek.</p>
+<p>Ennek egy következménye, hogy ha egy programozási nyelvben lehet szimulálni egy Turing-gép működését, akkor (számításelméleti szempontból) éppen olyan jó, mint bármely másik nyelv. Természetesen ettől egy programnyelv még nem lesz kényelmesen használható - erre utal a “Turing-kátránygödör” (<em>Turing tar-pit</em>) kifejezés, amibe olyan nyelvek tartoznak, mint a Brainfuck, a Whitespace vagy az Unlambda (ez utóbbi lambda-kalkulust valósít meg, úgyhogy a Church-Turing tézis közvetlenül alkalmazható).</p>
+<h3 id="turing-gép-prologban">Turing-gép Prologban</h3>
+<p>Írjunk Turing-gépet Prologban! Ahogy általában a Turing-gép, mint programozási nyelv tárgyalásánál szokás, a szalagra írható szimbólumok legyenek a <code>0</code> és az <code>1</code>.</p>
+<p>Programozási szempontból a végtelen szalag reprezentációja egy érdekes kérdés. Tároljuk külön az olvasófejtől balra és jobbra levő részt, méghozzá a baloldalit megfordítva! A szalag tehát <code>Left-[X|Right]</code> alakú lesz, ahol <code>Left</code> a balra levő szimbólumok listája (a lista feje a közvetlenül balra levő szimbólum), <code>X</code> az olvasófej alatti szimbólum, <code>Right</code> pedig a jobbra levő szimbólumok listája. Ugyan ez még mindig véges, de tudjuk szimulálni a végtelenséget: szükség esetén <code>0</code>-kkal egészítjük ki. A balra és jobbra mozgatás szabálya tehát:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>move([]<span class="fu">-</span><span class="dt">B</span><span class="kw">,</span> left<span class="kw">,</span> []<span class="fu">-</span>[<span class="dv">0</span><span class="fu">|</span><span class="dt">B</span>])<span class="kw">.</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>move([<span class="dt">X</span><span class="fu">|</span><span class="dt">A</span>]<span class="fu">-</span><span class="dt">B</span><span class="kw">,</span> left<span class="kw">,</span> <span class="dt">A</span><span class="fu">-</span>[<span class="dt">X</span><span class="fu">|</span><span class="dt">B</span>])<span class="kw">.</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>move(<span class="dt">A</span><span class="fu">-</span>[<span class="dt">X</span>]<span class="kw">,</span> right<span class="kw">,</span> [<span class="dt">X</span><span class="fu">|</span><span class="dt">A</span>]<span class="fu">-</span>[<span class="dv">0</span>])<span class="kw">.</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>move(<span class="dt">A</span><span class="fu">-</span>[<span class="dt">X</span>,<span class="dt">Y</span><span class="fu">|</span><span class="dt">B</span>]<span class="kw">,</span> right<span class="kw">,</span> [<span class="dt">X</span><span class="fu">|</span><span class="dt">A</span>]<span class="fu">-</span>[<span class="dt">Y</span><span class="fu">|</span><span class="dt">B</span>])<span class="kw">.</span></span></code></pre></div>
+<p>A szabályokat az <code>=&gt;</code> operátor segítségével adjuk meg úgy, ahogy a lineárisan korlátolt automatáknál láttuk.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">:-</span> <span class="fu">op</span>(<span class="dv">1100</span><span class="kw">,</span> xfx<span class="kw">,</span> =&gt;)<span class="kw">.</span></span></code></pre></div>
+<p>A gép “futtatása” ezután már könnyen megfogalmazható:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>run(<span class="dt">Tape</span><span class="kw">,</span> stop<span class="kw">,</span> <span class="dt">Tape</span>)<span class="kw">.</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>run(<span class="dt">Left</span><span class="fu">-</span>[<span class="dt">X</span><span class="fu">|</span><span class="dt">Right</span>]<span class="kw">,</span> <span class="dt">State</span><span class="kw">,</span> <span class="dt">Result</span>) <span class="kw">:-</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    write_state(<span class="dt">Left</span><span class="kw">,</span> <span class="dt">X</span><span class="kw">,</span> <span class="dt">Right</span><span class="kw">,</span> <span class="dt">State</span>)<span class="kw">,</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    (<span class="dt">State</span><span class="fu">/</span><span class="dt">X</span> =&gt; <span class="dt">State1</span><span class="fu">/</span><span class="dt">Y</span><span class="kw">,</span> <span class="dt">Movement</span>)<span class="kw">,</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    move(<span class="dt">Left</span><span class="fu">-</span>[<span class="dt">Y</span><span class="fu">|</span><span class="dt">Right</span>]<span class="kw">,</span> <span class="dt">Movement</span><span class="kw">,</span> <span class="dt">Tape</span>)<span class="kw">,</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    run(<span class="dt">Tape</span><span class="kw">,</span> <span class="dt">State1</span><span class="kw">,</span> <span class="dt">Result</span>)<span class="kw">.</span></span></code></pre></div>
+<p>A <code>stop</code> a végállapot; a <code>write_state</code> kiírja minden lépés után az aktuális állapotot és a szalag tartalmát, és megmutatja a fej pozícióját:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>write_state(<span class="dt">Left</span><span class="kw">,</span> <span class="dt">X</span><span class="kw">,</span> <span class="dt">Right</span><span class="kw">,</span> <span class="dt">State</span>) <span class="kw">:-</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    reverse(<span class="dt">Left</span><span class="kw">,</span> <span class="dt">Left1</span>)<span class="kw">,</span> append(<span class="dt">Left1</span><span class="kw">,</span> [<span class="dt">X</span><span class="fu">|</span><span class="dt">Right</span>]<span class="kw">,</span> <span class="dt">Tape</span>)<span class="kw">,</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">write</span>(<span class="dt">Tape</span>)<span class="kw">,</span> tab(<span class="dv">3</span>)<span class="kw">,</span> <span class="fu">write</span>(<span class="dt">State</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">,</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    length(<span class="dt">Left</span><span class="kw">,</span> <span class="dt">N</span>)<span class="kw">,</span> <span class="dt">N1</span> <span class="dt">is</span> <span class="dt">N</span> <span class="dt">*</span> <span class="dv">2</span> <span class="dt">+</span> <span class="dv">1</span><span class="kw">,</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    tab(<span class="dt">N1</span>)<span class="kw">,</span> <span class="fu">write</span>(<span class="st">&#39;^&#39;</span>)<span class="kw">,</span> <span class="fu">nl</span><span class="kw">.</span></span></code></pre></div>
+<p>Végül a legfelső szinten csak a szalagot adjuk meg, és visszakapjuk a (fejtől balra levő) eredményt:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>turing(<span class="dt">Tape</span><span class="kw">,</span> <span class="dt">Result</span>) <span class="kw">:-</span> run([]<span class="fu">-</span><span class="dt">Tape</span><span class="kw">,</span> start<span class="kw">,</span> <span class="dt">Left</span><span class="fu">-</span><span class="dt">_</span>)<span class="kw">,</span> reverse(<span class="dt">Left</span><span class="kw">,</span> <span class="dt">Result</span>)<span class="kw">.</span></span></code></pre></div>
+<p>(A <code>start</code> a kezdőállapot.)</p>
+<p>Példaként itt egy program, ami összead két számot. A számok unárisan vannak megadva (annyi darab <code>1</code>-es, amennyi a szám értéke), és egy <code>0</code>-val vannak elválasztva. A program annyit csinál, hogy a köztük levő <code>0</code>-t <code>1</code>-re cseréli, és utána a második szám végére érve az utolsó <code>1</code>-est <code>0</code>-ra cseréli.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>start<span class="fu">/</span><span class="dv">0</span> =&gt; next<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> right<span class="kw">.</span>  <span class="co">% megkeressük a két szám közti `0`-t,</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>start<span class="fu">/</span><span class="dv">1</span> =&gt; start<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> right<span class="kw">.</span> <span class="co">%   és `1`-re cseréljük</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>next<span class="fu">/</span><span class="dv">0</span> =&gt; dec<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> left<span class="kw">.</span>     <span class="co">% megkeressük a második szám végét</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>next<span class="fu">/</span><span class="dv">1</span> =&gt; next<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> right<span class="kw">.</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>dec<span class="fu">/</span><span class="dv">1</span> =&gt; stop<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span>    <span class="co">% az utolsó `1`-est `0`-ra cseréljük</span></span></code></pre></div>
+<p>Például 2 + 3 kiszámítása:</p>
+<pre><code>?- turing([1,1,0,1,1,1], X).
+[1,1,0,1,1,1]   start
+ ^
+[1,1,0,1,1,1]   start
+   ^
+[1,1,0,1,1,1]   start
+     ^
+[1,1,1,1,1,1]   next
+       ^
+[1,1,1,1,1,1]   next
+         ^
+[1,1,1,1,1,1]   next
+           ^
+[1,1,1,1,1,1,0]   next
+             ^
+[1,1,1,1,1,1,0]   dec
+           ^
+X = [1, 1, 1, 1, 1, 0] </code></pre>
+<h3 id="univerzális-turing-gép">Univerzális Turing-gép</h3>
+<p>Lehet készíteni <em>univerzális Turing-gépet</em> is, ami egy Turing-gép specifikációja és egy bemeneti szalag alapján kiszámolja, hogy a megadott Turing-gép a megadott adatra mit adna.</p>
+<p>De mit jelent az, hogy egy Turing-gép <em>specifikációja</em>? Ezt úgy kell elképzelni, hogy a Turing-gép programját egy számmá alakítjuk valamilyen megadott módon. Az egyes állapotokat számokkal jelölhetjük - a <code>start</code> lehet az 1-es, a <code>stop</code> a 0-s, a többi pedig 2-től felfele. Minden állapothoz felsoroljuk, hogy mit csinál <code>0</code>-ra és mit <code>1</code>-re. Ekkor a fenti összeadó program így néz ki:</p>
+<pre><code>21R11R30L21R00R00R</code></pre>
+<p>Ebből az első <code>21R</code> azt jelenti, hogy (1-es állapotban olvasott <code>0</code> esetén) a 2-es állapotba kell menni, <code>1</code>-et kell írni, és utána jobbra kell mozgatni a szalagot; a következő <code>11R</code> jelentése az, hogy (1-es állapotban olvasott <code>1</code> esetén) 1-es állapotban maradunk és <code>1</code>-est hagyunk a szalagon, majd azt jobbra mozgatjuk stb. Mivel a <code>dec</code> (3-as) állapothoz nem volt definiálva, mit csináljon <code>0</code> esetén, azt is <code>00R</code>-el (tehát <code>stop/0, right</code>-al) töltöttük ki.</p>
+<p>Most már csak annyi van hátra hogy ezt át kell váltani <code>0</code>-k és <code>1</code>-esek sorozatára. Ehhez a számokat unárisba váltjuk, majd ezután a következő módon kódoljuk:</p>
+<pre><code>   0 =&gt; 0
+  10 =&gt; 1
+ 110 =&gt; R
+1110 =&gt; L</code></pre>
+<p>A fenti program tehát erre alakul át:</p>
+<pre><code>1010101101010110101010011101010101100011000110</code></pre>
+<p>Ellenőrzésként próbáljuk dekódolni:</p>
+<pre><code>1010101101010110101010011101010101100011000110
+1 1 1 R  1 1 R  1 1 1 0L   1 1 1 R  00R  00R
+ 2  1 R  1 1 R    3   0L    2  1 R  00R  00R</code></pre>
+<p>Az így kiszámolt kódot tekinthetjük egy 2-es számrendszerű számnak, aminek az unáris megfelelőjét át tudjuk adni egy Turing-gép bemeneteként. Ilyen értelemben a legkisebb kódú Turing-gép a 6-os, tehát binárisan <code>00110</code>-s, ami dekódolva</p>
+<pre><code>start/0 =&gt; stop/0, right.</code></pre>
+<h4 id="feladat-1">Feladat</h4>
+<p>Mi a 10 legkisebb kódú Turing-gép? Mit csinálnak?</p>
+<h3 id="euklidészi-algoritmus">Euklidészi algoritmus</h3>
+<p>Bonyolultabb programra példa Euklidész algoritmusa két szám (<em>a</em> és <em>b</em>) legnagyobb közös osztójának megtalálására. A két szám itt is unárisan van megadva. Az algoritmus lépései:</p>
+<ol>
+<li><p>Levonja <em>a</em>-t <em>b</em>-ből úgy, hogy közben <em>a</em>-t megtartja: egy <code>0</code>-t mozgat az elejéről a végére, hogy “emlékezzen” rá, hol tart (pl. <code>01111</code> -&gt; <code>10111</code> -&gt; <code>11011</code> -&gt; <code>11101</code> -&gt; <code>11110</code>). Minden ilyen lépés után el kell mennie jobbra a <em>b</em> számhoz, ott törölni egy 1-est, aztán vissza.</p></li>
+<li><p>Ha <em>a</em> &gt; <em>b</em>, akkor <em>b</em> és <em>a</em> - <em>b</em> lesz a szalagon; ha <em>a</em> &lt; <em>b</em>, akkor <em>a</em> és <em>b</em> - <em>a</em>, ha pedig <em>a</em> = <em>b</em>, akkor csak <em>a</em>. Ez utóbbi esetben készen vagyunk.</p></li>
+<li><p>Egyébként pedig visszamegyünk az elejére.</p></li>
+</ol>
+<p>A főbb stációk <em>a</em> = 8 és <em>b</em> = 12 esetén:</p>
+<pre><code>...000001111111101111111111110... [8 12]
+...000011111111000000000011110... [8 4]
+...000111101111000000000000000... [4 4]
+...001111000000000000000000000... [4]</code></pre>
+<p>Egy bonyolultabb példán (csak decimálisan):</p>
+<pre><code>462 1071
+462 609
+462 147
+147 315
+147 168
+147 21
+21 126
+21 105
+21 84
+21 63
+21 42
+21 21
+21</code></pre>
+<p>Lássuk akkor a programot!</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>start<span class="fu">/</span><span class="dv">0</span> =&gt; start<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span> <span class="co">% megkeressük a-t</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>start<span class="fu">/</span><span class="dv">1</span> =&gt; s1<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> left<span class="kw">.</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>s1<span class="fu">/</span><span class="dv">0</span> =&gt; s2<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> right<span class="kw">.</span>       <span class="co">% lerakunk egy 1-est `a`-tól balra</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>s1<span class="fu">/</span><span class="dv">1</span> =&gt; s1<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> left<span class="kw">.</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>s2<span class="fu">/</span><span class="dv">0</span> =&gt; sa<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span>       <span class="co">% ha az `a` nem létezik, akkor készen vagyunk</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>s2<span class="fu">/</span><span class="dv">1</span> =&gt; s3<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span>       <span class="co">%    egyébként levonunk egyet `a`-ból</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>s3<span class="fu">/</span><span class="dv">0</span> =&gt; s4<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span>       <span class="co">% `a` jobboldalára megyünk</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>s3<span class="fu">/</span><span class="dv">1</span> =&gt; s3<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> right<span class="kw">.</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>s4<span class="fu">/</span><span class="dv">0</span> =&gt; s4<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span>       <span class="co">% megkeressük `b`-t, és levonunk egyet belőle</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>s4<span class="fu">/</span><span class="dv">1</span> =&gt; s5<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>s5<span class="fu">/</span><span class="dv">0</span> =&gt; s7<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> left<span class="kw">.</span>        <span class="co">% ha `b` elfogyott, jöhet a következő iteráció</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>s5<span class="fu">/</span><span class="dv">1</span> =&gt; s6<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> left<span class="kw">.</span>        <span class="co">%    egyébként vissza `a`-hoz és megint egy levonás</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>s6<span class="fu">/</span><span class="dv">0</span> =&gt; s6<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> left<span class="kw">.</span>        <span class="co">% vissza `a`-hoz és kezdjük elölről</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>s6<span class="fu">/</span><span class="dv">1</span> =&gt; s1<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> left<span class="kw">.</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>s7<span class="fu">/</span><span class="dv">0</span> =&gt; s7<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> left<span class="kw">.</span>        <span class="co">% vissza `a`-hoz [miután `b` elfogyott]</span></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>s7<span class="fu">/</span><span class="dv">1</span> =&gt; s8<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> left<span class="kw">.</span></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>s8<span class="fu">/</span><span class="dv">0</span> =&gt; s9<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> left<span class="kw">.</span>        <span class="co">% `a` baloldalára megyünk</span></span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>s8<span class="fu">/</span><span class="dv">1</span> =&gt; s8<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> left<span class="kw">.</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>s9<span class="fu">/</span><span class="dv">0</span> =&gt; s2<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span>       <span class="co">% ha itt nincs semmi, akkor `a` = `b` volt és vége</span></span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>s9<span class="fu">/</span><span class="dv">1</span> =&gt; s1<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> left<span class="kw">.</span>        <span class="co">%    egyébként jön a következő iteráció</span></span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>sa<span class="fu">/</span><span class="dv">0</span> =&gt; stop<span class="fu">/</span><span class="dv">0</span><span class="kw">,</span> right<span class="kw">.</span>     <span class="co">% elmegyünk az eredmény jobboldalára és leállunk</span></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>sa<span class="fu">/</span><span class="dv">1</span> =&gt; sa<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> right<span class="kw">.</span></span></code></pre></div>
+<h2 id="megállási-probléma">Megállási probléma</h2>
+<p>Vannak Turing-gépek, amelyek mindig leállnak, vannak, amelyek sosem, és vannak olyanok, amelyek csak bizonyos szalagokra állnak le. Létezik-e vajon olyan Turing-gép, ami kiszámítja, hogy adott Turing-gép adott szalag mellett meg fog-e állni?</p>
+<p>Tegyük fel, hogy létezik. Ekkor könnyen módosítható úgy, hogy</p>
+<ol>
+<li>Szalagként mindig az adott Turing-gép specifikációját adja át, tehát mindig azt ellenőrizze, hogy egy adott Turing-gép a saját leírására, mint bemenetre, leáll-e.</li>
+<li>Ha azt látja, hogy egy gép leáll, akkor kerüljön végtelen ciklusba.</li>
+</ol>
+<p>Ezután ha a saját leírására alkalmazzuk, ellentmondásra jutunk, mert ha ez a Turing-gép leáll, akkor (a második módosítás szerint) nem áll le, ha pedig nem áll le, akkor (az eredeti feltételezés szerint) ezt fel kéne ismernie, amihez viszont le kéne állnia!</p>
+<p>Ilyen Turing-gép (és a Church-Turing tézis szerint rekurzív függvény, vagy számítógépes program) nem létezhet, ez a függvény <em>kiszámíthatatlan</em>.</p>
+<h3 id="feladat-2">Feladat</h3>
+<p>Írj Turing-gép programokat, amelyek szemléltetik a három típust (mindig leálló, sosem leálló, néha leálló)!</p>
+<h2 id="szorgos-hód">Szorgos hód</h2>
+<p>Egy másik érdekes probléma Radó Tibor “szorgos hód” (<em>busy beaver</em>) feladványa: egy <em>n</em>-állapotú Turing-gép lefutása után legfeljebb hány <code>1</code>-es lehet a szalagon? Nevezzük ezt a függvényt <em>S</em>(<em>n</em>)-nek.</p>
+<p><em>S</em>(1) = 1, és a program</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>start<span class="fu">/</span><span class="dv">0</span> =&gt; stop<span class="fu">/</span><span class="dv">1</span><span class="kw">,</span> right<span class="kw">.</span></span></code></pre></div>
+<p>(A <code>stop</code> nem számít külön állapotnak.)</p>
+<p>Hasonlóan <em>S</em>(2) = 4, <em>S</em>(3) = 6 és <em>S</em>(4) = 13. A folytatás azonban nem ismert. Jelenleg a legszorgosabb 5-állapotú hód 4098 darab <code>1</code>-est ír ki kb. 47 millió lépésben; 6 állapotra az <code>1</code>-esek száma meghaladja a 3e18267-et (tehát 3 és utána 18267 nulla), és ehhez kb. 7e36534 lépést vesz igénybe.</p>
+<p>Könnyen belátható, hogy az <em>S</em>(<em>n</em>) függvény sem kiszámítható. Tegyük fel, hogy:</p>
+<ol>
+<li>Létezik egy <em>B</em> Turing-gép, ami ezt kiszámítja, és ennek legyen <em>q</em> állapota. A bemenet és kimenet egyaránt legyenek bináris számok.</li>
+<li>Legyen <em>A</em> egy olyan program, ami az üres szalagra kiírja az <em>n</em> számot binárisan (ehhez kb. log(<em>n</em>) állapot szükséges).</li>
+<li>Legyen <em>C</em> egy <em>r</em>-állapotú gép, ami egy bináris számot unárisba vált.</li>
+</ol>
+<p>Ekkor a három gép egymás utáni alkalmazása, <em>ABC</em>, pontosan <em>S</em>(<em>n</em>) darab <code>1</code>-est ír a szalagra, és ehhez log(<em>n</em>)+<em>q</em>+<em>r</em> állapotot használ. Ha <em>n</em>-t úgy választjuk, hogy <em>n</em> &gt; log(<em>n</em>)+<em>q</em>+<em>r</em>, akkor ez a program szorgosabb a legszorgosabb hódnál, tehát ellentmondásra jutottunk - a <em>B</em> Turing-gép nem létezhet.</p>
+<h3 id="feladat-3">Feladat</h3>
+<p>Írj 2- és 3-állapotú Turing-gép programot, amelyek rendre 4 és 6 darab <code>1</code>-est írnak a szalagra (tehát szorgos hódok)!</p>
+<h2 id="megjegyzések">Megjegyzések</h2>
+<p>Ez a dokumentum az alábbi könyv 2, 7, 14, 23, 26, 31, 39, 51, 59 és 66. fejezetei alapján készült:</p>
+<p>A. K. Dewdney, <em>The (New) Turing Omnibus</em>, Freeman / Holt, 1993.</p>
+<p>Az euklideszi algoritmus Turing-gépre írt verziójának, valamint a gépek kódolásának forrása:</p>
+<p>R. Penrose, <em>The Emperor’s New Mind</em>, Oxford, 1989.</p>
+<p>Ez utóbbi megjelent magyarul is:</p>
+<p>R. Penrose, <em>A császár új elméje</em>, Akadémiai kiadó, 2011.</p>
+<p>Lindenmayer-rendszerekről és növények modellezéséről ld. még:</p>
+<p>P. Prusinkiewicz, A. Lindenmayer, <em>The Algorithmic Beauty of Plants</em>, Springer, 1990.</p>
+<p>Innen származnak a növények képei; a fraktálos példa pedig az angol Wikipedia <em>L-system</em> oldaláról (2021. április).</p>
+<p>A <em>Turing tar-pit</em> és a hacker-kultúra más vicces kifejezései megtalálhatóak a <a href="http://www.catb.org/jargon/html/"><em>Jargon file</em>-ban</a>, ami könyvként is megjelent:</p>
+<p>E.S. Raymond, <em>The New Hacker’s Dictionary</em>, 3rd Ed., MIT, 1996.</p>
+</body>
+</html>
