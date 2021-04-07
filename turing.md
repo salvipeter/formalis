@@ -89,8 +89,12 @@ lindenmayer(0, X) :- prologue, maplist(paint, X).
 lindenmayer(N, X) :- N > 0, N1 is N - 1, iterate(X, X1), lindenmayer(N1, X1).
 
 iterate([], []).
-iterate([X|Xs], Z) :- rule(X, Y), iterate(Xs, Ys), append(Y, Ys, Z).
-iterate([X|Xs], Z) :- \+ rule(X, _), iterate(Xs, Ys), append([X], Ys, Z).
+iterate([X|Xs], Z) :-
+    rule(X, Y), string_chars(Y, Y1),
+    iterate(Xs, Ys), append(Y1, Ys, Z).
+iterate([X|Xs], Z) :-
+    \+ rule(X, _),
+    iterate(Xs, Ys), append([X], Ys, Z).
 
 prologue :-
     write('clearscreen'), nl,
@@ -102,9 +106,9 @@ paint(g) :- write('forward :size'), nl.
 paint(-) :- write('right :angle'), nl.
 paint(+) :- write('left :angle'), nl.
 
-rule(a, [f,-,g,-,g]).
-rule(f, [f,-,g,+,f,+,g,-,f]).
-rule(g, [g,g]).
+rule(a, 'f-g-g').
+rule(f, 'f-g+f+g-f').
+rule(g, 'gg').
 ```
 Példa a program kimenetére:
 ```
