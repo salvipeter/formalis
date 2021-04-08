@@ -217,7 +217,7 @@ A Turing-gépek használhatóak függvények kiszámítására is: a szalagon ke
 
 A számításelmélet talán legfontosabb tétele a Church-Turing tézis, miszerint a Turing-gépek, a rekurzív függvények, a lambda-kalkulus, és a számítógépes (nem interaktív) programok mind azonos "erősségűek", ugyanazokra a számításokra képesek.
 
-Ennek egy következménye, hogy ha egy programozási nyelvben lehet szimulálni egy Turing-gép működését, akkor (számításelméleti szempontból) éppen olyan jó, mint bármely másik nyelv. Természetesen ettől egy programnyelv még nem lesz kényelmesen használható - erre utal a "Turing-kátránygödör" (*Turing tar-pit*) kifejezés, amibe olyan nyelvek tartoznak, mint a Brainfuck, a Whitespace vagy az Unlambda (ez utóbbi lambda-kalkulust valósít meg, úgyhogy a Church-Turing tézis közvetlenül alkalmazható).
+Ennek egy következménye, hogy ha egy programozási nyelvben lehet szimulálni egy Turing-gép működését, akkor (számításelméleti szempontból) éppen olyan jó, mint bármely másik nyelv. Természetesen ettől egy programnyelv még nem lesz kényelmesen használható - erre utal a "Turing-kátránygödör" (*Turing tar-pit*) kifejezés, amibe olyan nyelvek tartoznak, mint a Brainfuck, a Whitespace vagy az Unlambda (ez utóbbi a lambda-kalkulussal egyenértékű kombinatorikus logikán alapul, úgyhogy a Church-Turing tézis közvetlenül alkalmazható).
 
 ### Turing-gép Prologban
 
